@@ -1,6 +1,7 @@
 # SHBF-SM-Registrering
 
-Registrera tävlande öl till SHBF SM via BeerXML-export (t.ex. från BeerSmith). Scriptet loggar in på event.shbf.se och skickar in en ölregistrering med data från din BeerXML-fil.
+Registrera tävlande öl till SHBF SM via BeerXML-export (t.ex. från BeerSmith).  
+*[English version](README.en.md)* Scriptet loggar in på event.shbf.se och skickar in en ölregistrering med data från din BeerXML-fil.
 
 ## Krav
 

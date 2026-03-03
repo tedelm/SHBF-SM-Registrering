@@ -10,6 +10,18 @@ Register competition beers for SHBF SM using a BeerXML export (e.g. from BeerSmi
 - SHBF account (username and password for event.shbf.se)
 - Event ID and FV Event ID for the current SM (see below)
 
+## Limitations
+
+The registration form on event.shbf.se has a limited number of fields. The script therefore imports **at most the first 4 rows** of each type from the BeerXML; any additional rows are ignored.
+
+| Type   | Max count | Notes |
+|--------|-----------|--------|
+| Malt   | 4         | Only the first 4 fermentables/malts are imported. |
+| Hops   | 4         | Only the first 4 hop varieties are imported. |
+| Other  | 4         | Only the first 4 misc additions are imported. |
+
+If your recipe has more than 4 malts (or more hops/other), you need to add or edit those entries manually on event.shbf.se after importing, or simplify the recipe in BeerSmith before export.
+
 ## Usage
 
 Run the script from the `powershell` folder (or pass the path to the script) with all required parameters:

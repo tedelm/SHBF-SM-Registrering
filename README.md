@@ -10,6 +10,18 @@ Registrera tävlande öl till SHBF SM via BeerXML-export (t.ex. från BeerSmith)
 - SHBF-konto (användarnamn och lösenord för event.shbf.se)
 - Event-ID och FV Event-ID för aktuell SM (se nedan)
 
+## Begränsningar
+
+Registreringsformuläret på event.shbf.se har ett begränsat antal fält. Scriptet importerar därför **högst de första 4 raderna** av varje typ från BeerXML; övriga rader används inte.
+
+| Typ    | Max antal | Kommentar |
+|--------|-----------|-----------|
+| Malt   | 4         | Endast de 4 första fermentables/maltena importeras. |
+| Humle  | 4         | Endast de 4 första humlesorterna importeras. |
+| Övrigt | 4         | Endast de 4 första misc-tillsatserna importeras. |
+
+Har ditt recept fler än 4 maltsorter (eller fler humle/övrigt), måste du efter import komplettera eller redigera registreringen manuellt på event.shbf.se, eller förenkla receptet i BeerSmith innan export.
+
 ## Användning
 
 Kör scriptet från `powershell`-mappen (eller ange sökväg till scriptet) med alla obligatoriska parametrar:

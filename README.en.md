@@ -1,16 +1,16 @@
 # SHBF SM Registration
 
 Register competition beers for SHBF SM using a BeerXML export (e.g. from BeerSmith).  
-*[Svenska](README.md)* You can run either the **PowerShell script** (requires only Windows PowerShell) or the **Go program** (requires Go to be installed). Both log in to event.shbf.se and submit a beer registration with data from your BeerXML file.
+*[Svenska](README.md)* You can run either the pre-built binaries listed on the releases page, **PowerShell script** (requires only Windows PowerShell) or the **Go program** (requires Go to be installed). Both log in to event.shbf.se and submit a beer registration with data from your BeerXML file.
 
-**Running the Go binaries (See releases for latest .exe):**  
+**Running the pre-compiled binaries (See releases for latest .exe, no need to build):**  
 - **Windows:** `.\shbfsmreg.exe -username pelle -password mittlösenord -beerxmlpath .\mitt_recept.xml -brewername pelle -breweremail pelle@epost.se` 
 - **Linux:** `./shbfsmreg_linux -username pelle -password mittlösenord -beerxmlpath .\mitt_recept.xml -brewername pelle -breweremail pelle@epost.se` 
 - **macOS:** `./shbfsmreg_darwin -username pelle -password mittlösenord -beerxmlpath .\mitt_recept.xml -brewername pelle -breweremail pelle@epost.se`
 
 See [Parameters](#parameters) for all flags.
 
-## Requirements
+## Requirements (There is no requirements if you choose to run the pre-compiled binaries)
 
 - **PowerShell:** Windows PowerShell (no extra install needed for the script)
 - **Go program:** [Go (Golang)](https://go.dev/) 1.21+ (see [Installing Go](#installing-go) below)

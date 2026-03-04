@@ -1,7 +1,7 @@
 # SHBF-SM-Registrering
 
 Registrera tävlande öl till SHBF SM via BeerXML-export (t.ex. från BeerSmith).  
-*[English version](README.en.md)* Du kan köra antingen **PowerShell-scriptet** (kräver endast Windows PowerShell) eller **Go-programmet** (kräver att Go är installerat). Båda loggar in på event.shbf.se och skickar in en ölregistrering med data från din BeerXML-fil.
+*[English version](README.en.md)* Du kan köra antingen de färdiga binärerna listade under releases, **PowerShell-scriptet** (kräver endast Windows PowerShell) eller **Go-programmet** (kräver att Go är installerat). Båda loggar in på event.shbf.se och skickar in en ölregistrering med data från din BeerXML-fil.
 
 **Kör Go-binärerna (Se releaser för färdiga .exe-filer):**  
 - **Windows:** `.\shbfsmreg.exe -username pelle -password mittlösenord -beerxmlpath .\mitt_recept.xml -brewername pelle -breweremail pelle@epost.se` 
@@ -10,7 +10,7 @@ Registrera tävlande öl till SHBF SM via BeerXML-export (t.ex. från BeerSmith)
 
 Se [Parametrar](#parametrar) för alla flaggor.
 
-## Krav
+## Krav (Om man väljer att använda de färdiga binärerna gäller inte dessa krav)
 
 - **PowerShell:** Windows PowerShell (inget extra behov för scriptet)
 - **Go-program:** [Go (Golang)](https://go.dev/) 1.21+ (se [Installera Go](#installera-go) nedan)

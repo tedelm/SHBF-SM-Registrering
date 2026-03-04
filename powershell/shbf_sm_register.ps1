@@ -13,6 +13,7 @@ Eventids for the 2026 SM are:
 param(
     [int] $CompDt = 1,  # 1 = include comp_dt=1 (Domartavlingen), 0 = omit
     [int] $CompFv = 0,   # 1 = include comp_fv=1 (Folkets val), 0 = omit
+    [int] $IngredientLimit = 10,  # Max number of rows for hops, malts, and others
     [parameter(mandatory = $true)] [string] $username,
     [parameter(mandatory = $true)] [string] $password,
     [parameter(mandatory = $true)] [string] $BeerXmlPath,
@@ -129,6 +130,7 @@ function Get-BeerRegFormBody {
     param(
         [int] $CompDt = 1,
         [int] $CompFv = 0,
+        [int] $IngredientLimit = 10,
         [parameter(mandatory = $true)] [string] $BrewersName,
         [parameter(mandatory = $true)] [string] $BrewersEmail,
         [Parameter(ParameterSetName = "Manual")][string] $BeerName = "",
@@ -228,7 +230,7 @@ function Get-BeerRegFormBody {
         $hopNodes = @($recipe.SelectNodes(".//*[local-name()='HOPS']/*[local-name()='HOP']"))
         $hops = @()
         foreach ($h in $hopNodes) {
-            if ($hops.Count -ge 4) { break }
+            if ($hops.Count -ge $IngredientLimit) { break }
             $hops += [PSCustomObject]@{
                 Name = (Get-NodeText $h "NAME"); Alpha = (Get-NodeText $h "ALPHA"); Weight = (Get-HopWeightGrams $h)
                 BoilTime = (Get-NodeText $h "TIME"); FormId = (Get-HopFormId (Get-NodeText $h "FORM")); Comment = (Get-NodeText $h "NOTES")
@@ -246,13 +248,13 @@ function Get-BeerRegFormBody {
         $fermNodes = @($recipe.SelectNodes(".//*[local-name()='FERMENTABLES']/*[local-name()='FERMENTABLE']"))
         $malts = @()
         foreach ($f in $fermNodes) {
-            if ($malts.Count -ge 4) { break }
+            if ($malts.Count -ge $IngredientLimit) { break }
             $malts += [PSCustomObject]@{
                 Name = (Get-NodeText $f "NAME"); Weight = (Get-MaltWeightGrams $f); Comment = (Get-NodeText $f "NOTES")
             }
         }
 
-        # Mash steps -> mashing text
+        # Mash steps -> mashing text (BeerXML: MASH_STEP can be under MASH_STEPS or direct under MASH; .// finds both)
         $mash = $recipe.SelectSingleNode(".//*[local-name()='MASH']")
         if ($mash) {
             $steps = $mash.SelectNodes(".//*[local-name()='MASH_STEP']")
@@ -303,7 +305,7 @@ function Get-BeerRegFormBody {
         $miscNodes = @($recipe.SelectNodes(".//*[local-name()='MISCS']/*[local-name()='MISC']"))
         $others = @()
         foreach ($m in $miscNodes) {
-            if ($others.Count -ge 4) { break }
+            if ($others.Count -ge $IngredientLimit) { break }
             $others += [PSCustomObject]@{
                 Name = (Get-NodeText $m "NAME"); StageId = (Get-MiscStageId (Get-NodeText $m "USE")); Weight = (Get-MiscWeight $m); Comment = (Get-NodeText $m "NOTES")
             }
@@ -316,23 +318,23 @@ function Get-BeerRegFormBody {
     if (-not $Water) { $Water = "Vatten från xx-stad`r`nTillsatser:`r`nxx g någonting" }
     if (-not $Comment) { $Comment = "Här ska t.ex. öltyp anges för underklasserna Övriga klassiska." }
 
-    # Ensure we have 4 hop slots and 4 malt slots (and 4 others)
+    # Ensure we have IngredientLimit hop/malt/other slots
     if (-not $hops) {
-        $hops = 1..4 | ForEach-Object { [PSCustomObject]@{ Name = ""; Alpha = ""; Weight = ""; BoilTime = ""; FormId = "0"; Comment = "" } }
+        $hops = 1..$IngredientLimit | ForEach-Object { [PSCustomObject]@{ Name = ""; Alpha = ""; Weight = ""; BoilTime = ""; FormId = "0"; Comment = "" } }
     }
-    while ($hops.Count -lt 4) {
+    while ($hops.Count -lt $IngredientLimit) {
         $hops += [PSCustomObject]@{ Name = ""; Alpha = ""; Weight = ""; BoilTime = ""; FormId = "0"; Comment = "" }
     }
     if (-not $malts) {
-        $malts = 1..4 | ForEach-Object { [PSCustomObject]@{ Name = ""; Weight = ""; Comment = "" } }
+        $malts = 1..$IngredientLimit | ForEach-Object { [PSCustomObject]@{ Name = ""; Weight = ""; Comment = "" } }
     }
-    while ($malts.Count -lt 4) {
+    while ($malts.Count -lt $IngredientLimit) {
         $malts += [PSCustomObject]@{ Name = ""; Weight = ""; Comment = "" }
     }
     if (-not $others) {
-        $others = 1..4 | ForEach-Object { [PSCustomObject]@{ Name = ""; StageId = "0"; Weight = ""; Comment = "" } }
+        $others = 1..$IngredientLimit | ForEach-Object { [PSCustomObject]@{ Name = ""; StageId = "0"; Weight = ""; Comment = "" } }
     }
-    while ($others.Count -lt 4) {
+    while ($others.Count -lt $IngredientLimit) {
         $others += [PSCustomObject]@{ Name = ""; StageId = "0"; Weight = ""; Comment = "" }
     }
 
@@ -340,15 +342,15 @@ function Get-BeerRegFormBody {
     if ($CompDt -eq 1) { $parts += "comp_dt=1" }
     if ($CompFv -eq 1) { $parts += "comp_fv=1" }
     $parts += "beer_type=" + [System.Web.HttpUtility]::UrlEncode($BeerType), "beer_name=" + [System.Web.HttpUtility]::UrlEncode($BeerName), "og=" + [System.Web.HttpUtility]::UrlEncode($Og), "fg=" + [System.Web.HttpUtility]::UrlEncode($Fg), "bu=" + [System.Web.HttpUtility]::UrlEncode($Bu), "alc=" + [System.Web.HttpUtility]::UrlEncode($Alc), "volume=" + [System.Web.HttpUtility]::UrlEncode($Volume), "brewers_name%5B%5D=" + [System.Web.HttpUtility]::UrlEncode($BrewersName), "brewers_email%5B%5D=" + [System.Web.HttpUtility]::UrlEncode($BrewersEmail)
-    foreach ($h in $hops[0..3]) {
+    foreach ($h in $hops[0..($IngredientLimit - 1)]) {
         $fid = if ($h.FormId) { $h.FormId } else { "0" }
         $parts += "hops_name%5B%5D=" + [System.Web.HttpUtility]::UrlEncode($h.Name), "hops_form_id_sel%5B%5D=" + $fid, "hops_alpha%5B%5D=" + [System.Web.HttpUtility]::UrlEncode($h.Alpha), "hops_weight%5B%5D=" + [System.Web.HttpUtility]::UrlEncode($h.Weight), "hops_boil_time%5B%5D=" + [System.Web.HttpUtility]::UrlEncode($h.BoilTime), "hops_comment%5B%5D=" + [System.Web.HttpUtility]::UrlEncode($h.Comment)
     }
-    foreach ($m in $malts[0..3]) {
+    foreach ($m in $malts[0..($IngredientLimit - 1)]) {
         $parts += "malts_name%5B%5D=" + [System.Web.HttpUtility]::UrlEncode($m.Name), "malts_weight%5B%5D=" + [System.Web.HttpUtility]::UrlEncode($m.Weight), "malts_comment%5B%5D=" + [System.Web.HttpUtility]::UrlEncode($m.Comment)
     }
     $parts += "mashing=" + [System.Web.HttpUtility]::UrlEncode($Mashing)
-    foreach ($o in $others[0..3]) {
+    foreach ($o in $others[0..($IngredientLimit - 1)]) {
         $sid = if ($o.StageId) { $o.StageId } else { "0" }
         $parts += "others_name%5B%5D=" + [System.Web.HttpUtility]::UrlEncode($o.Name), "others_stage_id_sel%5B%5D=" + $sid, "others_weight%5B%5D=" + [System.Web.HttpUtility]::UrlEncode($o.Weight), "others_comment%5B%5D=" + [System.Web.HttpUtility]::UrlEncode($o.Comment)
     }
@@ -367,7 +369,7 @@ function Get-BeerRegFormBody {
 }
 
 # Build form body from BeerXML, then POST once (CompDt determines if comp_dt=1 is sent)
-$body = Get-BeerRegFormBody -BeerXmlPath $BeerXmlPath -BrewersName "$brewersName" -BrewersEmail "$brewersEmail" -CompDt $CompDt -CompFv $CompFv -WebSession $session
+$body = Get-BeerRegFormBody -BeerXmlPath $BeerXmlPath -BrewersName "$brewersName" -BrewersEmail "$brewersEmail" -CompDt $CompDt -CompFv $CompFv -IngredientLimit $IngredientLimit -WebSession $session
 $body = $body.Replace(" ", "&")
 $response = Invoke-WebRequest -UseBasicParsing -Uri $url -WebSession $session -Method POST -ContentType "application/x-www-form-urlencoded" -Body $body -Headers $Headers
 

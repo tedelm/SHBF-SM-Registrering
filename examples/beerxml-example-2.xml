@@ -1,0 +1,683 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><RECIPES>
+<RECIPE>
+ <NAME>Dark Ales Matter 7%</NAME>
+ <VERSION>1</VERSION>
+ <TYPE>All Grain</TYPE>
+ <BREWER>Ted</BREWER>
+ <ASST_BREWER></ASST_BREWER>
+ <BATCH_SIZE>20.0000000</BATCH_SIZE>
+ <BOIL_SIZE>25.0000000</BOIL_SIZE>
+ <BOIL_TIME>60.0000000</BOIL_TIME>
+ <EFFICIENCY>65.0000000</EFFICIENCY>
+ <HOPS>
+<HOP>
+ <NAME>Cascade</NAME>
+ <VERSION>1</VERSION>
+ <ORIGIN>U.S.</ORIGIN>
+ <ALPHA>5.5000000</ALPHA>
+ <AMOUNT>0.0200000</AMOUNT>
+ <USE>Mash</USE>
+ <TIME>60.0000000</TIME>
+ <NOTES>A hops with Northern Brewers Heritage
+Used for: American ales and lagers
+Aroma: Strong spicy, floral, grapefruit character
+Substitutes: Centennial
+Examples: Sierra Nevada Pale Ale, Anchor Liberty Ale</NOTES>
+ <TYPE>Both</TYPE>
+ <FORM>Pellet</FORM>
+ <BETA>6.0000000</BETA>
+ <HSI>50.0000000</HSI>
+ <DISPLAY_AMOUNT>20.00 g</DISPLAY_AMOUNT>
+ <INVENTORY>0.00 g</INVENTORY>
+ <DISPLAY_TIME>60.0 min</DISPLAY_TIME>
+</HOP>
+<HOP>
+ <NAME>Columbus (Tomahawk)</NAME>
+ <VERSION>1</VERSION>
+ <ORIGIN>U.S.</ORIGIN>
+ <ALPHA>14.0000000</ALPHA>
+ <AMOUNT>0.0120000</AMOUNT>
+ <USE>Boil</USE>
+ <TIME>60.0000000</TIME>
+ <NOTES>Engineered Centennial Substitute - High alpha bittering hops.
+Used for: Bittering, flavor, aroma - IPA, American Pale Ale, Stout, Lager
+Aroma: Pungent, spicy. Strongly aromatic, but clean tasting bitterness
+Substitutes: Centennial</NOTES>
+ <TYPE>Bittering</TYPE>
+ <FORM>Pellet</FORM>
+ <BETA>5.0000000</BETA>
+ <HSI>40.0000000</HSI>
+ <DISPLAY_AMOUNT>12.00 g</DISPLAY_AMOUNT>
+ <INVENTORY>0.00 g</INVENTORY>
+ <DISPLAY_TIME>60.0 min</DISPLAY_TIME>
+</HOP>
+<HOP>
+ <NAME>Centennial</NAME>
+ <VERSION>1</VERSION>
+ <ORIGIN>U.S.</ORIGIN>
+ <ALPHA>10.0000000</ALPHA>
+ <AMOUNT>0.0100000</AMOUNT>
+ <USE>Boil</USE>
+ <TIME>20.0000000</TIME>
+ <NOTES>Used for: General purpose bittering, aroma in American ales and Wheats
+Aroma: Floral, citrus aroma, spicy, clean bittering flavor
+Substitutes: Galena, Eroica, Nugget, Bullion
+Examples: Sierra Nevada Celebration Ale, Sierra Nevada Bigfoot</NOTES>
+ <TYPE>Bittering</TYPE>
+ <FORM>Pellet</FORM>
+ <BETA>4.0000000</BETA>
+ <HSI>40.0000000</HSI>
+ <DISPLAY_AMOUNT>10.00 g</DISPLAY_AMOUNT>
+ <INVENTORY>0.00 g</INVENTORY>
+ <DISPLAY_TIME>20.0 min</DISPLAY_TIME>
+</HOP>
+<HOP>
+ <NAME>Crystal</NAME>
+ <VERSION>1</VERSION>
+ <ORIGIN>U.S.</ORIGIN>
+ <ALPHA>3.5000000</ALPHA>
+ <AMOUNT>0.0250000</AMOUNT>
+ <USE>Aroma</USE>
+ <TIME>30.0000000</TIME>
+ <NOTES>Used for: Aroma and finishing hops for Lagers
+Aroma: Clean, mild, pleasant and slightly spicy
+Substitutes: Hallertauer, Mount Liberty</NOTES>
+ <TYPE>Aroma</TYPE>
+ <FORM>Pellet</FORM>
+ <BETA>5.2000000</BETA>
+ <HSI>50.0000000</HSI>
+ <DISPLAY_AMOUNT>25.00 g</DISPLAY_AMOUNT>
+ <INVENTORY>0.00 g</INVENTORY>
+ <DISPLAY_TIME>30.0 min</DISPLAY_TIME>
+</HOP>
+<HOP>
+ <NAME>Loral</NAME>
+ <VERSION>1</VERSION>
+ <ORIGIN>US - YCH Hops</ORIGIN>
+ <ALPHA>10.0000000</ALPHA>
+ <AMOUNT>0.0250000</AMOUNT>
+ <USE>Aroma</USE>
+ <TIME>30.0000000</TIME>
+ <NOTES>Loral is a floral, citrus, fruity, herbal hops used for its aromatic qualities.  Versatile.  Lupulin powder - typically used during the whirlpool/steep or dry hop phases at about half the weight of pellet hops to mazimize aroma/flavor.  Concentrated to enhance hop oils. Store near freezing.</NOTES>
+ <TYPE>Aroma</TYPE>
+ <FORM>Pellet</FORM>
+ <BETA>5.1000000</BETA>
+ <HSI>10.0000000</HSI>
+ <DISPLAY_AMOUNT>25.00 g</DISPLAY_AMOUNT>
+ <INVENTORY>0.00 g</INVENTORY>
+ <DISPLAY_TIME>30.0 min</DISPLAY_TIME>
+</HOP>
+<HOP>
+ <NAME>Superdelic</NAME>
+ <VERSION>1</VERSION>
+ <ORIGIN>New Zealand</ORIGIN>
+ <ALPHA>9.0000000</ALPHA>
+ <AMOUNT>0.0999999</AMOUNT>
+ <USE>Dry Hop</USE>
+ <TIME>5760.0000000</TIME>
+ <NOTES>Brewing
+In a Hazy IPA it revealed its ripe mango, sweet berry, and citrus notes. We also noticed its unique performance, with great biotransformation properties from dry hopping during active fermentation. It is an incredible addition to our brewery. We were lucky to be one of the first to try it.&#8221; says Mike Sutherland, Director at Sawmill Brewery.
+
+Applications
+A versatile hop that can be used as a single hop addition and has great synergies in combination with other hops. Pairs well with Citra, Simcoe, Nelson Sauvin, Motueka and Riwaka.</NOTES>
+ <TYPE>Both</TYPE>
+ <FORM>Pellet</FORM>
+ <BETA>3.0000000</BETA>
+ <HSI>20.0000000</HSI>
+ <DISPLAY_AMOUNT>100.00 g</DISPLAY_AMOUNT>
+ <INVENTORY>0.00 g</INVENTORY>
+ <DISPLAY_TIME>60.0 min</DISPLAY_TIME>
+</HOP>
+<HOP>
+ <NAME>Cryo - Mosaic</NAME>
+ <VERSION>1</VERSION>
+ <ORIGIN>US - YCH Hops</ORIGIN>
+ <ALPHA>22.0000000</ALPHA>
+ <AMOUNT>0.0500000</AMOUNT>
+ <USE>Dry Hop</USE>
+ <TIME>5760.0000000</TIME>
+ <NOTES>Mosaic is an earthy, floral, fruity hops widely used for finishing IPAs.  Lupulin powder - typically used during the whirlpool/steep or dry hop phases at about half the weight of pellet hops to mazimize aroma/flavor.  Concentrated to enhance hop oils. Store near freezing.</NOTES>
+ <TYPE>Aroma</TYPE>
+ <FORM>Pellet</FORM>
+ <BETA>3.0000000</BETA>
+ <HSI>10.0000000</HSI>
+ <DISPLAY_AMOUNT>50.00 g</DISPLAY_AMOUNT>
+ <INVENTORY>0.00 g</INVENTORY>
+ <DISPLAY_TIME>60.0 min</DISPLAY_TIME>
+</HOP>
+<HOP>
+ <NAME>Cryo - Citra</NAME>
+ <VERSION>1</VERSION>
+ <ORIGIN>US - YCH Hops</ORIGIN>
+ <ALPHA>25.0000000</ALPHA>
+ <AMOUNT>0.0125000</AMOUNT>
+ <USE>Dry Hop</USE>
+ <TIME>5760.0000000</TIME>
+ <NOTES>Lupulin powder - typically used during the whirlpool/steep or dry hop phases at about half the weight of pellet hops to mazimize aroma/flavor.  Concentrated to enhance hop oils. Store near freezing.</NOTES>
+ <TYPE>Aroma</TYPE>
+ <FORM>Pellet</FORM>
+ <BETA>4.0000000</BETA>
+ <HSI>10.0000000</HSI>
+ <DISPLAY_AMOUNT>12.50 g</DISPLAY_AMOUNT>
+ <INVENTORY>0.00 g</INVENTORY>
+ <DISPLAY_TIME>60.0 min</DISPLAY_TIME>
+</HOP>
+</HOPS>
+
+ <FERMENTABLES>
+<FERMENTABLE>
+ <NAME>Finest Maris Otter&#174; Ale Malt (Crisp)</NAME>
+ <VERSION>1</VERSION>
+ <TYPE>Grain</TYPE>
+ <AMOUNT>5.7999963</AMOUNT>
+ <YIELD>81.5000000</YIELD>
+ <COLOR>6.5000000</COLOR>
+ <ADD_AFTER_BOIL>FALSE</ADD_AFTER_BOIL>
+ <ORIGIN>United Kingdom</ORIGIN>
+ <SUPPLIER>Crisp</SUPPLIER>
+ <NOTES>The consistently reliable Maris Otter&#174; continues to provide the qualities expected by the brewer</NOTES>
+ <COARSE_FINE_DIFF>1.5000000</COARSE_FINE_DIFF>
+ <MOISTURE>3.5000000</MOISTURE>
+ <DIASTATIC_POWER>53.0000000</DIASTATIC_POWER>
+ <PROTEIN>9.0000000</PROTEIN>
+ <MAX_IN_BATCH>100.0000000</MAX_IN_BATCH>
+ <RECOMMEND_MASH>TRUE</RECOMMEND_MASH>
+ <IBU_GAL_PER_LB>0.0000000</IBU_GAL_PER_LB>
+ <DISPLAY_AMOUNT>5.80 kg</DISPLAY_AMOUNT>
+ <INVENTORY>0.00 kg</INVENTORY>
+ <POTENTIAL>1.0374900</POTENTIAL>
+ <DISPLAY_COLOR>6.5 EBC</DISPLAY_COLOR>
+ <EXTRACT_SUBSTITUTE></EXTRACT_SUBSTITUTE>
+</FERMENTABLE>
+<FERMENTABLE>
+ <NAME>BEST Chit Malt</NAME>
+ <VERSION>1</VERSION>
+ <TYPE>Grain</TYPE>
+ <AMOUNT>0.3999997</AMOUNT>
+ <YIELD>75.0000000</YIELD>
+ <COLOR>2.4999999</COLOR>
+ <ADD_AFTER_BOIL>FALSE</ADD_AFTER_BOIL>
+ <ORIGIN>Germany</ORIGIN>
+ <SUPPLIER>BESTMALZ</SUPPLIER>
+ <NOTES>BEST Chit Malt is used as a speciality among
+the functional malts either temporarily or continuously
+in the mashing process. The slightly
+dissolved barley malt contains a lot of high-molecular
+protein compared to a pilsner malt. It
+is therefore suitable for compensating for very
+highly dissolved malts and for improving foam.
+The malt has a particularly large number of socalled
+inherent starter enzymes. These improve
+the substance conversion in the starch and thus
+increase the yield. BEST Chit Malt does not
+affect the color of the beer.</NOTES>
+ <COARSE_FINE_DIFF>1.5000000</COARSE_FINE_DIFF>
+ <MOISTURE>4.2000000</MOISTURE>
+ <DIASTATIC_POWER>120.0000000</DIASTATIC_POWER>
+ <PROTEIN>11.7000000</PROTEIN>
+ <MAX_IN_BATCH>15.0000000</MAX_IN_BATCH>
+ <RECOMMEND_MASH>TRUE</RECOMMEND_MASH>
+ <IBU_GAL_PER_LB>0.0000000</IBU_GAL_PER_LB>
+ <DISPLAY_AMOUNT>0.40 kg</DISPLAY_AMOUNT>
+ <INVENTORY>0.00 kg</INVENTORY>
+ <POTENTIAL>1.0345000</POTENTIAL>
+ <DISPLAY_COLOR>2.5 EBC</DISPLAY_COLOR>
+ <EXTRACT_SUBSTITUTE></EXTRACT_SUBSTITUTE>
+</FERMENTABLE>
+<FERMENTABLE>
+ <NAME>Chocolate Malt (Crisp)</NAME>
+ <VERSION>1</VERSION>
+ <TYPE>Grain</TYPE>
+ <AMOUNT>0.1999999</AMOUNT>
+ <YIELD>72.0000000</YIELD>
+ <COLOR>1043.0000001</COLOR>
+ <ADD_AFTER_BOIL>FALSE</ADD_AFTER_BOIL>
+ <ORIGIN>United Kingdom</ORIGIN>
+ <SUPPLIER>Crisp</SUPPLIER>
+ <NOTES>Gives dry, toasty flavours to rich, dark beers</NOTES>
+ <COARSE_FINE_DIFF>1.5000000</COARSE_FINE_DIFF>
+ <MOISTURE>2.0000000</MOISTURE>
+ <DIASTATIC_POWER>0.0000000</DIASTATIC_POWER>
+ <PROTEIN>10.0000000</PROTEIN>
+ <MAX_IN_BATCH>5.0000000</MAX_IN_BATCH>
+ <RECOMMEND_MASH>FALSE</RECOMMEND_MASH>
+ <IBU_GAL_PER_LB>0.0000000</IBU_GAL_PER_LB>
+ <DISPLAY_AMOUNT>0.20 kg</DISPLAY_AMOUNT>
+ <INVENTORY>0.00 kg</INVENTORY>
+ <POTENTIAL>1.0331200</POTENTIAL>
+ <DISPLAY_COLOR>1043.0 EBC</DISPLAY_COLOR>
+ <EXTRACT_SUBSTITUTE></EXTRACT_SUBSTITUTE>
+</FERMENTABLE>
+<FERMENTABLE>
+ <NAME>Chocolate Wheat (Weyermann)</NAME>
+ <VERSION>1</VERSION>
+ <TYPE>Grain</TYPE>
+ <AMOUNT>0.1999999</AMOUNT>
+ <YIELD>75.7400000</YIELD>
+ <COLOR>817.5500000</COLOR>
+ <ADD_AFTER_BOIL>FALSE</ADD_AFTER_BOIL>
+ <ORIGIN>Germany</ORIGIN>
+ <SUPPLIER>Weyermann</SUPPLIER>
+ <NOTES>Chocholate malt made with a wheat base.  Adds aroma and color.  Alts and dark wheat beers.</NOTES>
+ <COARSE_FINE_DIFF>1.5000000</COARSE_FINE_DIFF>
+ <MOISTURE>3.0000000</MOISTURE>
+ <DIASTATIC_POWER>0.0000000</DIASTATIC_POWER>
+ <PROTEIN>0.0000000</PROTEIN>
+ <MAX_IN_BATCH>5.0000000</MAX_IN_BATCH>
+ <RECOMMEND_MASH>FALSE</RECOMMEND_MASH>
+ <IBU_GAL_PER_LB>0.0000000</IBU_GAL_PER_LB>
+ <DISPLAY_AMOUNT>0.20 kg</DISPLAY_AMOUNT>
+ <INVENTORY>0.00 kg</INVENTORY>
+ <POTENTIAL>1.0348404</POTENTIAL>
+ <DISPLAY_COLOR>817.5 EBC</DISPLAY_COLOR>
+ <EXTRACT_SUBSTITUTE></EXTRACT_SUBSTITUTE>
+</FERMENTABLE>
+<FERMENTABLE>
+ <NAME>Crystal, T50&#8482; (Simpsons)</NAME>
+ <VERSION>1</VERSION>
+ <TYPE>Grain</TYPE>
+ <AMOUNT>0.0999999</AMOUNT>
+ <YIELD>69.0000000</YIELD>
+ <COLOR>133.0000001</COLOR>
+ <ADD_AFTER_BOIL>FALSE</ADD_AFTER_BOIL>
+ <ORIGIN>UK</ORIGIN>
+ <SUPPLIER>Simpsons</SUPPLIER>
+ <NOTES>The secret is in the name - Target 50! Each batch targets 50 Lovibond colour (130EBC). The specification on Crystal T50 was created with one of their most acclaimed clients in mind. With an exceptionally tight consistency - it&#39;s fantastic crystal that crunches in the mouth offering. Crystal T50 provides amazing colour and delicate malty flavours to beer.</NOTES>
+ <COARSE_FINE_DIFF>1.5000000</COARSE_FINE_DIFF>
+ <MOISTURE>5.0000000</MOISTURE>
+ <DIASTATIC_POWER>0.0000000</DIASTATIC_POWER>
+ <PROTEIN>0.0000000</PROTEIN>
+ <MAX_IN_BATCH>20.0000000</MAX_IN_BATCH>
+ <RECOMMEND_MASH>TRUE</RECOMMEND_MASH>
+ <IBU_GAL_PER_LB>0.0000000</IBU_GAL_PER_LB>
+ <DISPLAY_AMOUNT>0.10 kg</DISPLAY_AMOUNT>
+ <INVENTORY>0.00 kg</INVENTORY>
+ <POTENTIAL>1.0317400</POTENTIAL>
+ <DISPLAY_COLOR>133.0 EBC</DISPLAY_COLOR>
+ <EXTRACT_SUBSTITUTE></EXTRACT_SUBSTITUTE>
+</FERMENTABLE>
+<FERMENTABLE>
+ <NAME>Sinamar 120ml = 50EBC (Wyermann)</NAME>
+ <VERSION>1</VERSION>
+ <TYPE>Extract</TYPE>
+ <AMOUNT>0.0500000</AMOUNT>
+ <YIELD>42.5000000</YIELD>
+ <COLOR>8299.9999999</COLOR>
+ <ADD_AFTER_BOIL>FALSE</ADD_AFTER_BOIL>
+ <ORIGIN>Germany</ORIGIN>
+ <SUPPLIER>Weyermann</SUPPLIER>
+ <NOTES>A unique coloring agent in liquid form.  Schwartz beer, colour adjustment.Roast malt beer extract.</NOTES>
+ <COARSE_FINE_DIFF>0.0000000</COARSE_FINE_DIFF>
+ <MOISTURE>0.0000000</MOISTURE>
+ <DIASTATIC_POWER>0.0000000</DIASTATIC_POWER>
+ <PROTEIN>0.0000000</PROTEIN>
+ <MAX_IN_BATCH>0.0000000</MAX_IN_BATCH>
+ <RECOMMEND_MASH>FALSE</RECOMMEND_MASH>
+ <IBU_GAL_PER_LB>0.0000000</IBU_GAL_PER_LB>
+ <DISPLAY_AMOUNT>0.05 kg</DISPLAY_AMOUNT>
+ <INVENTORY>0.00 kg</INVENTORY>
+ <POTENTIAL>1.0195500</POTENTIAL>
+ <DISPLAY_COLOR>8300.0 EBC</DISPLAY_COLOR>
+ <EXTRACT_SUBSTITUTE></EXTRACT_SUBSTITUTE>
+</FERMENTABLE>
+</FERMENTABLES>
+
+ <MISCS>
+<MISC>
+ <NAME>Gypsum (Calcium Sulfate, CaSO4)</NAME>
+ <VERSION>1</VERSION>
+ <TYPE>Water Agent</TYPE>
+ <USE>Mash</USE>
+ <AMOUNT>0.004000</AMOUNT>
+ <TIME>60.00</TIME>
+ <AMOUNT_IS_WEIGHT>TRUE</AMOUNT_IS_WEIGHT>
+ <USE_FOR>Water Agent</USE_FOR>
+ <NOTES>Reduces PH of water for mashing and sparging.   Alters water profile -- used to harden soft water.  Use the BeerSmith Water Profile tool to determine amount to add.</NOTES>
+ <DISPLAY_AMOUNT>4.00 g</DISPLAY_AMOUNT>
+ <INVENTORY>0.00 g</INVENTORY>
+ <DISPLAY_TIME>60.0 mins</DISPLAY_TIME>
+ <BATCH_SIZE>18.93 l</BATCH_SIZE>
+</MISC>
+<MISC>
+ <NAME>Calcium Chloride (CaCl2)</NAME>
+ <VERSION>1</VERSION>
+ <TYPE>Water Agent</TYPE>
+ <USE>Mash</USE>
+ <AMOUNT>0.003000</AMOUNT>
+ <TIME>60.00</TIME>
+ <AMOUNT_IS_WEIGHT>TRUE</AMOUNT_IS_WEIGHT>
+ <USE_FOR>Water Agent</USE_FOR>
+ <NOTES>Alters water profile and pH of mash.  Use the BeerSmith Water Profile tool to determine amount to add.</NOTES>
+ <DISPLAY_AMOUNT>3.00 g</DISPLAY_AMOUNT>
+ <INVENTORY>0.00 g</INVENTORY>
+ <DISPLAY_TIME>60.0 mins</DISPLAY_TIME>
+ <BATCH_SIZE>18.93 l</BATCH_SIZE>
+</MISC>
+<MISC>
+ <NAME>Antioxin SBT</NAME>
+ <VERSION>1</VERSION>
+ <TYPE>Water Agent</TYPE>
+ <USE>Mash</USE>
+ <AMOUNT>0.001700</AMOUNT>
+ <TIME>60.00</TIME>
+ <AMOUNT_IS_WEIGHT>TRUE</AMOUNT_IS_WEIGHT>
+ <USE_FOR>Water Agent</USE_FOR>
+ <NOTES>Use campden tablets to remove chlorine or chloramine from their brewing water.</NOTES>
+ <DISPLAY_AMOUNT>1.70 g</DISPLAY_AMOUNT>
+ <INVENTORY>100.00 g</INVENTORY>
+ <DISPLAY_TIME>60.0 mins</DISPLAY_TIME>
+ <BATCH_SIZE>100.00 l</BATCH_SIZE>
+</MISC>
+<MISC>
+ <NAME>Phosphoric Acid 75% (Sparge)</NAME>
+ <VERSION>1</VERSION>
+ <TYPE>Water Agent</TYPE>
+ <USE>Mash</USE>
+ <AMOUNT>0.001000</AMOUNT>
+ <TIME>60.00</TIME>
+ <AMOUNT_IS_WEIGHT>FALSE</AMOUNT_IS_WEIGHT>
+ <USE_FOR>Water Agent</USE_FOR>
+ <NOTES>Multiply ml by 1.6954 to get grams at 20*C
+Used to lower the pH of the mash without altering the water profile.  Lower pH mashes generally improves head retention, increases extraction rate.</NOTES>
+ <DISPLAY_AMOUNT>1.00 ml</DISPLAY_AMOUNT>
+ <INVENTORY>0.00 ml</INVENTORY>
+ <DISPLAY_TIME>60.0 mins</DISPLAY_TIME>
+ <BATCH_SIZE>18.93 l</BATCH_SIZE>
+</MISC>
+<MISC>
+ <NAME>Phosphoric Acid 75% (Sparge)</NAME>
+ <VERSION>1</VERSION>
+ <TYPE>Water Agent</TYPE>
+ <USE>Mash</USE>
+ <AMOUNT>0.000750</AMOUNT>
+ <TIME>60.00</TIME>
+ <AMOUNT_IS_WEIGHT>FALSE</AMOUNT_IS_WEIGHT>
+ <USE_FOR>Water Agent</USE_FOR>
+ <NOTES>Multiply ml by 1.6954 to get grams at 20*C
+Used to lower the pH of the mash without altering the water profile.  Lower pH mashes generally improves head retention, increases extraction rate.</NOTES>
+ <DISPLAY_AMOUNT>0.75 ml</DISPLAY_AMOUNT>
+ <INVENTORY>0.00 ml</INVENTORY>
+ <DISPLAY_TIME>60.0 mins</DISPLAY_TIME>
+ <BATCH_SIZE>18.93 l</BATCH_SIZE>
+</MISC>
+<MISC>
+ <NAME>Phosphoric Acid 75% (Boil) 5.2-&#62;4.8</NAME>
+ <VERSION>1</VERSION>
+ <TYPE>Water Agent</TYPE>
+ <USE>Boil</USE>
+ <AMOUNT>0.000100</AMOUNT>
+ <TIME>0.00</TIME>
+ <AMOUNT_IS_WEIGHT>FALSE</AMOUNT_IS_WEIGHT>
+ <USE_FOR>Water Agent</USE_FOR>
+ <NOTES>Multiply ml by 1.6954 to get grams at 20*C
+Used to lower the pH of the mash without altering the water profile.  Lower pH mashes generally improves head retention, increases extraction rate.</NOTES>
+ <DISPLAY_AMOUNT>0.10 ml</DISPLAY_AMOUNT>
+ <INVENTORY>0.00 ml</INVENTORY>
+ <DISPLAY_TIME>0.0 mins</DISPLAY_TIME>
+ <BATCH_SIZE>23.00 l</BATCH_SIZE>
+</MISC>
+</MISCS>
+
+ <YEASTS>
+<YEAST>
+ <NAME>German Bock Lager (Harvested+Starter)</NAME>
+ <VERSION>1</VERSION>
+ <TYPE>Lager</TYPE>
+ <FORM>Liquid</FORM>
+ <AMOUNT>0.0354884</AMOUNT>
+ <AMOUNT_IS_WEIGHT>FALSE</AMOUNT_IS_WEIGHT>
+ <LABORATORY>White Labs</LABORATORY>
+ <PRODUCT_ID>WLP833</PRODUCT_ID>
+ <MIN_TEMPERATURE>8.8888889</MIN_TEMPERATURE>
+ <MAX_TEMPERATURE>12.7777778</MAX_TEMPERATURE>
+ <FLOCCULATION>Medium</FLOCCULATION>
+ <ATTENUATION>73.0000000</ATTENUATION>
+ <NOTES>Produces beer that has balanced malt and hop character.  From Southern Bavaria.</NOTES>
+ <BEST_FOR>Bocks, Doppelbocks, Oktoberfest, Vienna, Helles, some American Pilsners</BEST_FOR>
+ <MAX_REUSE>5</MAX_REUSE>
+ <TIMES_CULTURED>0</TIMES_CULTURED>
+ <ADD_TO_SECONDARY>FALSE</ADD_TO_SECONDARY>
+ <DISPLAY_AMOUNT>35.49 ml</DISPLAY_AMOUNT>
+ <DISP_MIN_TEMP>8.9 C</DISP_MIN_TEMP>
+ <DISP_MAX_TEMP>12.8 C</DISP_MAX_TEMP>
+ <INVENTORY>0.0 pkg</INVENTORY>
+ <CULTURE_DATE>2003-06-14</CULTURE_DATE>
+</YEAST>
+</YEASTS>
+
+ <WATERS>
+<WATER>
+ <NAME>S&#246;dra Sandby - 2020 - Water</NAME>
+ <VERSION>1</VERSION>
+ <AMOUNT>23.0000000</AMOUNT>
+ <CALCIUM>22.0000000</CALCIUM>
+ <BICARBONATE>46.0000000</BICARBONATE>
+ <SULFATE>7.8000000</SULFATE>
+ <CHLORIDE>30.0000000</CHLORIDE>
+ <SODIUM>11.0000000</SODIUM>
+ <MAGNESIUM>1.7000000</MAGNESIUM>
+ <PH>8.3000000</PH>
+ <NOTES></NOTES>
+ <DISPLAY_AMOUNT>23.00 l</DISPLAY_AMOUNT>
+</WATER>
+<WATER>
+ <NAME>S&#246;dra Sandby - 2020 - Water</NAME>
+ <VERSION>1</VERSION>
+ <AMOUNT>11.0000000</AMOUNT>
+ <CALCIUM>22.0000000</CALCIUM>
+ <BICARBONATE>46.0000000</BICARBONATE>
+ <SULFATE>7.8000000</SULFATE>
+ <CHLORIDE>30.0000000</CHLORIDE>
+ <SODIUM>11.0000000</SODIUM>
+ <MAGNESIUM>1.7000000</MAGNESIUM>
+ <PH>8.3000000</PH>
+ <NOTES></NOTES>
+ <DISPLAY_AMOUNT>11.00 l</DISPLAY_AMOUNT>
+</WATER>
+</WATERS>
+
+ <STYLE>
+ <NAME>Black IPA</NAME>
+ <VERSION>1</VERSION>
+ <CATEGORY>Kraftig ale</CATEGORY>
+ <CATEGORY_NUMBER>5</CATEGORY_NUMBER>
+ <STYLE_LETTER>E</STYLE_LETTER>
+ <STYLE_GUIDE>SHBF 2020</STYLE_GUIDE>
+ <TYPE>Ale</TYPE>
+ <OG_MIN>1.0500000</OG_MIN>
+ <OG_MAX>1.0700000</OG_MAX>
+ <FG_MIN>1.0120000</FG_MIN>
+ <FG_MAX>1.0180000</FG_MAX>
+ <IBU_MIN>40.0000000</IBU_MIN>
+ <IBU_MAX>60.0000000</IBU_MAX>
+ <COLOR_MIN>80.0608000</COLOR_MIN>
+ <COLOR_MAX>100.0760000</COLOR_MAX>
+ <CARB_MIN>2.2000000</CARB_MIN>
+ <CARB_MAX>2.8000000</CARB_MAX>
+ <ABV_MAX>7.5000000</ABV_MAX>
+ <ABV_MIN>5.5000000</ABV_MIN>
+ <NOTES>Black IPA &#228;r en mycket modern &#246;lstil som s&#229;g
+dagens ljus f&#246;rst i mitten p&#229; 00-talet. Black
+IPA bryggs p&#229; pilsnermalt eller neutral pale
+ale-malt samt n&#229;gra procent rostade maltsorter.
+De m&#246;rka maltsorterna ska bidra med f&#228;rg
+samt l&#228;ttrostade och chokladiga aromer och
+smaker. Maltkompositionen kompletteras med
+mindre tillsatser av karamellmalt. Maltkarakt&#228;ren
+f&#229;r dock inte &#246;verskugga humlen. Precis
+som i en vanlig IPA ska humlen dominera.
+Humlekarakt&#228;ren ska precis som i vanlig IPA
+dra &#229;t citrus och tropisk frukt.</NOTES>
+ <PROFILE>Ska ha en stor blommig humledoft med inslag av tropisk frukt och/eller citrus. Rostade
+men ej br&#228;nda malttoner och inslag av karamell
+ska finnas p&#229; l&#229;g niv&#229;. Alkoholtoner p&#229; l&#229;g niv&#229;
+&#228;r till&#229;tet.
+
+M&#246;rkbrun till svart.
+K&#246;ldgrumling &#228;r till&#229;ten.
+
+Kraftigt smakhumlad med moderna humlesorter som drar &#229;t citrus och tropisk frukt.
+
+Beskan ska vara kraftig.
+
+Maltigheten ska vara rostad och chokladig med inslag av kaffe och karamell. F&#229;r vara l&#228;tt br&#228;nd. 
+Choklad och karamell f&#229;r inte dominera s&#229; att
+det ger ett s&#246;tt intryck.
+Fruktestrar p&#229; medium niv&#229; f&#229;r f&#246;rekomma.
+
+Medium kropp.</PROFILE>
+ <INGREDIENTS></INGREDIENTS>
+ <EXAMPLES>J&#228;mtlands Black IPA 6,0% /J&#228;mtlands
+bryggeri - Raven Black IPA 6,6% /
+Thornbridge</EXAMPLES>
+ <DISPLAY_OG_MIN>1.050 SG</DISPLAY_OG_MIN>
+ <DISPLAY_OG_MAX>1.070 SG</DISPLAY_OG_MAX>
+ <DISPLAY_FG_MIN>1.012 SG</DISPLAY_FG_MIN>
+ <DISPLAY_FG_MAX>1.018 SG</DISPLAY_FG_MAX>
+ <DISPLAY_COLOR_MIN>80.1 EBC</DISPLAY_COLOR_MIN>
+ <DISPLAY_COLOR_MAX>100.1 EBC</DISPLAY_COLOR_MAX>
+ <OG_RANGE>1,050-1,070 SG</OG_RANGE>
+ <FG_RANGE>1,012-1,018 SG</FG_RANGE>
+ <IBU_RANGE>40,0-60,0 IBUs</IBU_RANGE>
+ <CARB_RANGE>2,20-2,80 Vols</CARB_RANGE>
+ <COLOR_RANGE>80,1-100,1 EBC</COLOR_RANGE>
+ <ABV_RANGE>5,50-7,50 %</ABV_RANGE>
+</STYLE>
+
+ <EQUIPMENT>
+ <NAME>Grainfather G30 220V USA</NAME>
+ <VERSION>1</VERSION>
+ <BOIL_SIZE>25.0000000</BOIL_SIZE>
+ <BATCH_SIZE>20.0000000</BATCH_SIZE>
+ <TUN_VOLUME>30.0000000</TUN_VOLUME>
+ <TUN_WEIGHT>9.2999940</TUN_WEIGHT>
+ <TUN_SPECIFIC_HEAT>0.1200000</TUN_SPECIFIC_HEAT>
+ <TOP_UP_WATER>0.0000000</TOP_UP_WATER>
+ <TRUB_CHILLER_LOSS>2.5000000</TRUB_CHILLER_LOSS>
+ <EVAP_RATE>10.0000000</EVAP_RATE>
+ <BOIL_TIME>60.0000000</BOIL_TIME>
+ <CALC_BOIL_VOLUME>FALSE</CALC_BOIL_VOLUME>
+ <LAUTER_DEADSPACE>0.0000000</LAUTER_DEADSPACE>
+ <TOP_UP_KETTLE>0.0000000</TOP_UP_KETTLE>
+ <HOP_UTILIZATION>100.0000000</HOP_UTILIZATION>
+ <COOLING_LOSS_PCT>3.0000000</COOLING_LOSS_PCT>
+ <NOTES></NOTES>
+ <DISPLAY_BOIL_SIZE>25.00 l</DISPLAY_BOIL_SIZE>
+ <DISPLAY_BATCH_SIZE>20.00 l</DISPLAY_BATCH_SIZE>
+ <DISPLAY_TUN_VOLUME>30.00 l</DISPLAY_TUN_VOLUME>
+ <DISPLAY_TUN_WEIGHT>9.30 kg</DISPLAY_TUN_WEIGHT>
+ <DISPLAY_TOP_UP_WATER>0.00 l</DISPLAY_TOP_UP_WATER>
+ <DISPLAY_TRUB_CHILLER_LOSS>2.50 l</DISPLAY_TRUB_CHILLER_LOSS>
+ <DISPLAY_LAUTER_DEADSPACE>0.00 l</DISPLAY_LAUTER_DEADSPACE>
+ <DISPLAY_TOP_UP_KETTLE>0.00 l</DISPLAY_TOP_UP_KETTLE>
+</EQUIPMENT>
+
+ <MASH>
+ <NAME>DLNB</NAME>
+ <VERSION>1</VERSION>
+ <GRAIN_TEMP>22.2222222</GRAIN_TEMP>
+ <TUN_TEMP>22.2222222</TUN_TEMP>
+ <SPARGE_TEMP>75.5555556</SPARGE_TEMP>
+ <PH>5.4000000</PH>
+ <TUN_WEIGHT>328.0479024</TUN_WEIGHT>
+ <TUN_SPECIFIC_HEAT>0.1200000</TUN_SPECIFIC_HEAT>
+ <EQUIP_ADJUST>FALSE</EQUIP_ADJUST>
+ <NOTES>Two step profile with a protein rest for mashes with unmodified grains or adjuncts.  Temperature mash for use when mashing in a brew pot over a heat source such as the stove.  Use heat to maintain desired temperature during the mash.</NOTES>
+ <DISPLAY_GRAIN_TEMP>22.2 C</DISPLAY_GRAIN_TEMP>
+ <DISPLAY_TUN_TEMP>22.2 C</DISPLAY_TUN_TEMP>
+ <DISPLAY_SPARGE_TEMP>75.6 C</DISPLAY_SPARGE_TEMP>
+ <DISPLAY_TUN_WEIGHT>9.30 kg</DISPLAY_TUN_WEIGHT>
+<MASH_STEPS>
+<MASH_STEP>
+ <NAME>Mash Step</NAME>
+ <VERSION>1</VERSION>
+ <TYPE>Infusion</TYPE>
+ <INFUSE_AMOUNT>19.6511000</INFUSE_AMOUNT>
+ <STEP_TIME>60.0000000</STEP_TIME>
+ <STEP_TEMP>65.0000000</STEP_TEMP>
+ <RAMP_TIME>4.0000000</RAMP_TIME>
+ <END_TEMP>65.0000000</END_TEMP>
+ <DESCRIPTION>Add 23,15 l of water at 69,7 C</DESCRIPTION>
+ <WATER_GRAIN_RATIO>2,933 l/kg</WATER_GRAIN_RATIO>
+ <DECOCTION_AMT>0.00 l</DECOCTION_AMT>
+ <INFUSE_TEMP>69.7 C</INFUSE_TEMP>
+ <DISPLAY_STEP_TEMP>65.0 C</DISPLAY_STEP_TEMP>
+ <DISPLAY_INFUSE_AMT>23.15 l</DISPLAY_INFUSE_AMT>
+</MASH_STEP>
+<MASH_STEP>
+ <NAME>Mash Step</NAME>
+ <VERSION>1</VERSION>
+ <TYPE>Infusion</TYPE>
+ <INFUSE_AMOUNT>0.0000000</INFUSE_AMOUNT>
+ <STEP_TIME>20.0000000</STEP_TIME>
+ <STEP_TEMP>72.0000000</STEP_TEMP>
+ <RAMP_TIME>4.0000000</RAMP_TIME>
+ <END_TEMP>72.0000000</END_TEMP>
+ <DESCRIPTION>Add 0,00 l of water at 72,0 C</DESCRIPTION>
+ <WATER_GRAIN_RATIO>3,455 l/kg</WATER_GRAIN_RATIO>
+ <DECOCTION_AMT>0.00 l</DECOCTION_AMT>
+ <INFUSE_TEMP>72.0 C</INFUSE_TEMP>
+ <DISPLAY_STEP_TEMP>72.0 C</DISPLAY_STEP_TEMP>
+ <DISPLAY_INFUSE_AMT>0.00 l</DISPLAY_INFUSE_AMT>
+</MASH_STEP>
+<MASH_STEP>
+ <NAME>Mash Step</NAME>
+ <VERSION>1</VERSION>
+ <TYPE>Infusion</TYPE>
+ <INFUSE_AMOUNT>0.0000000</INFUSE_AMOUNT>
+ <STEP_TIME>15.0000000</STEP_TIME>
+ <STEP_TEMP>78.0000000</STEP_TEMP>
+ <RAMP_TIME>4.0000000</RAMP_TIME>
+ <END_TEMP>78.0000000</END_TEMP>
+ <DESCRIPTION>Add 0,00 l of water at 78,0 C</DESCRIPTION>
+ <WATER_GRAIN_RATIO>3,455 l/kg</WATER_GRAIN_RATIO>
+ <DECOCTION_AMT>0.00 l</DECOCTION_AMT>
+ <INFUSE_TEMP>78.0 C</INFUSE_TEMP>
+ <DISPLAY_STEP_TEMP>78.0 C</DISPLAY_STEP_TEMP>
+ <DISPLAY_INFUSE_AMT>0.00 l</DISPLAY_INFUSE_AMT>
+</MASH_STEP>
+</MASH_STEPS>
+
+</MASH>
+
+ <NOTES></NOTES>
+ <TASTE_NOTES></TASTE_NOTES>
+ <TASTE_RATING>30.0000000</TASTE_RATING>
+ <OG>1.0680000</OG>
+ <FG>1.0150000</FG>
+ <CARBONATION>2.4000000</CARBONATION>
+ <FERMENTATION_STAGES>2</FERMENTATION_STAGES>
+ <PRIMARY_AGE>3.0000000</PRIMARY_AGE>
+ <PRIMARY_TEMP>18.0000000</PRIMARY_TEMP>
+ <SECONDARY_AGE>7.0000000</SECONDARY_AGE>
+ <SECONDARY_TEMP>23.0000000</SECONDARY_TEMP>
+ <TERTIARY_AGE>7.0000000</TERTIARY_AGE>
+ <AGE>2.0000000</AGE>
+ <AGE_TEMP>23.0000000</AGE_TEMP>
+ <CARBONATION_USED>Keg with 94,56 KPA</CARBONATION_USED>
+ <FORCED_CARBONATION>FALSE</FORCED_CARBONATION>
+ <PRIMING_SUGAR_NAME>Forced Carbonation</PRIMING_SUGAR_NAME>
+ <PRIMING_SUGAR_EQUIV>1.0000000</PRIMING_SUGAR_EQUIV>
+ <KEG_PRIMING_FACTOR>0.5000000</KEG_PRIMING_FACTOR>
+ <CARBONATION_TEMP>7.2222222</CARBONATION_TEMP>
+ <DISPLAY_CARB_TEMP>7.2 C</DISPLAY_CARB_TEMP>
+ <DATE>2024-10-06</DATE>
+ <EST_OG>1.068 SG</EST_OG>
+ <EST_FG>1.015 SG</EST_FG>
+ <EST_COLOR>94.7 EBC</EST_COLOR>
+ <IBU>40.4 IBUs</IBU>
+ <IBU_METHOD>Tinseth</IBU_METHOD>
+ <EST_ABV>7.0 %</EST_ABV>
+ <ABV>7.0 %</ABV>
+ <ACTUAL_EFFICIENCY>65.3 %</ACTUAL_EFFICIENCY>
+ <CALORIES>648.9 kcal/l</CALORIES>
+ <DISPLAY_BATCH_SIZE>20.00 l</DISPLAY_BATCH_SIZE>
+ <DISPLAY_BOIL_SIZE>25.00 l</DISPLAY_BOIL_SIZE>
+ <DISPLAY_OG>1.068 SG</DISPLAY_OG>
+ <DISPLAY_FG>1.015 SG</DISPLAY_FG>
+ <DISPLAY_PRIMARY_TEMP>18.0 C</DISPLAY_PRIMARY_TEMP>
+ <DISPLAY_SECONDARY_TEMP>23.0 C</DISPLAY_SECONDARY_TEMP>
+ <DISPLAY_TERTIARY_TEMP>18.3 C</DISPLAY_TERTIARY_TEMP>
+ <DISPLAY_AGE_TEMP>23.0 C</DISPLAY_AGE_TEMP>
+</RECIPE>
+</RECIPES>

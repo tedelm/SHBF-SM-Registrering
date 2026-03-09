@@ -152,6 +152,12 @@ Gemensam betydelse; namn skiljer mellan PowerShell och Go.
 | Folkets val | `CompFv` (1/0) | — | Nej (endast PowerShell) |
 | Max rader malt/humle/övrigt | `IngredientLimit` | `-ingredientlimit` (standard 10) | Nej |
 | Uppdatera befintlig öl (sök efter receptnamn i listan) | — | `-updatebeer` (endast Go) | Nej |
+| Kontrollera recept mot stilens OG/FG, IBU, EBC, ABV (se [Validering](#validering-go-programmet)) | — | `-verifybeerstyle` (endast Go, standard: true) | Nej |
+
+**Go-flaggor – updatebeer och verifybeerstyle**
+
+- **`-updatebeer`** (standard: false): Sätt till `true` för att **uppdatera en befintlig öl** i stället för att skapa en ny. Programmet hämtar öllistan från event.shbf.se, hittar raden som innehåller receptnamnet från BeerXML, och använder den ölens `beer_id` för att öppna redigeringsformuläret innan formuläret skickas.
+- **`-verifybeerstyle`** (standard: true): **Stilvalidering** – kontrollerar att receptets OG, FG, IBU, EBC och ABV ligger inom stilens min/max från BeerXML (STYLE). Om något ligger utanför avbryts körningen med fel. Sätt till `false` för att hoppa över valideringen (t.ex. om stilen saknar gränser eller du vill registrera ändå).
 
 ### Event-ID för 2026 SM
 

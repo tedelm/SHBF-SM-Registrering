@@ -127,7 +127,7 @@ cd powershell
 
 ### Parameters
 
-Same meaning across tools; names differ between PowerShell and Go.
+ Same meaning across tools; names differ between PowerShell and Go.
 
 | Description | PowerShell | Go (flag) | Required |
 |-------------|------------|-----------|----------|
@@ -141,6 +141,13 @@ Same meaning across tools; names differ between PowerShell and Go.
 | Judge competition | `CompDt` (1/0) | — | No (PowerShell only) |
 | People's choice | `CompFv` (1/0) | — | No (PowerShell only) |
 | Max rows malt/hops/other | `IngredientLimit` | `-ingredientlimit` (default 10) | No |
+| Update existing beer (find by recipe name in list) | — | `-updatebeer` (Go only) | No |
+| Verify recipe against style OG/FG, IBU, EBC, ABV (see [Validation](#validation-go-program)) | — | `-verifybeerstyle` (Go only, default: true) | No |
+
+**Go flags – updatebeer and verifybeerstyle**
+
+- **`-updatebeer`** (default: false): Set to `true` to **update an existing beer** instead of creating a new one. The program fetches the beer list from event.shbf.se, finds the row containing the recipe name from the BeerXML, and uses that beer’s `beer_id` to open the edit form before submitting.
+- **`-verifybeerstyle`** (default: true): **Style validation** – checks that the recipe’s OG, FG, IBU, EBC, and ABV are within the style’s min/max from the BeerXML STYLE element. If any value is out of range, the run stops with an error. Set to `false` to skip validation (e.g. if the style has no bounds or you want to register anyway).
 
 ### Event IDs for 2026 SM
 

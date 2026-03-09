@@ -30,6 +30,20 @@ Registreringsformuläret på event.shbf.se har ett begränsat antal fält. Scrip
 
 Vid fler ingredienser än gränsen kan du öka `IngredientLimit` / `-ingredientlimit`, eller redigera registreringen manuellt på event.shbf.se efter import.
 
+## Validering (Go-programmet)
+
+Go-programmet kontrollerar att receptet passar till vald stil utifrån BeerXML:s **STYLE**-element. Om stilen har min/max angivet jämförs receptets värden mot dessa; ligger något utanför intervallet avbryts körningen med ett felmeddelande.
+
+| Kontroll | Receptvärde (från BeerXML) | Stilgränser (STYLE) |
+|----------|----------------------------|----------------------|
+| OG       | OG / EST_OG                | OG_MIN, OG_MAX       |
+| FG       | FG / EST_FG                | FG_MIN, FG_MAX       |
+| IBU      | IBU / EST_IBU              | IBU_MIN, IBU_MAX     |
+| EBC (färg) | EST_COLOR                | COLOR_MIN, COLOR_MAX |
+| ABV      | ABV / EST_ABV              | ABV_MIN, ABV_MAX     |
+
+Saknas min/max för en dimension i stilen hoppas den kontrollen över. Receptet måste ha ett giltigt stilval (CATEGORY_NUMBER och STYLE_LETTER).
+
 ---
 
 ## Installera Go (för Go-programmet)
@@ -100,6 +114,8 @@ cd powershell
 
 ### Go (efter build)
 
+Ny öl (standard):
+
 ```powershell
 .\go\build\bin\shbfsmreg.exe `
   -username "ditt_shbf_användarnamn" `
@@ -109,6 +125,14 @@ cd powershell
   -breweremail "din@epost.se" `
   -eventid 61 `
   -fveventid 62
+```
+
+Uppdatera befintlig öl (programmet hittar ölen i listan via receptnamnet i BeerXML):
+
+```powershell
+.\go\build\bin\shbfsmreg.exe -updatebeer `
+  -username "..." -password "..." -beerxmlpath ".\recept.xml" `
+  -brewername "..." -breweremail "..." -eventid 61 -fveventid 62
 ```
 
 ### Parametrar
@@ -127,6 +151,7 @@ Gemensam betydelse; namn skiljer mellan PowerShell och Go.
 | Domartävlingen | `CompDt` (1/0) | — | Nej (endast PowerShell) |
 | Folkets val | `CompFv` (1/0) | — | Nej (endast PowerShell) |
 | Max rader malt/humle/övrigt | `IngredientLimit` | `-ingredientlimit` (standard 10) | Nej |
+| Uppdatera befintlig öl (sök efter receptnamn i listan) | — | `-updatebeer` (endast Go) | Nej |
 
 ### Event-ID för 2026 SM
 

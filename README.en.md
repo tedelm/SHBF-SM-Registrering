@@ -30,6 +30,20 @@ The registration form on event.shbf.se has a limited number of fields. The scrip
 
 For more ingredients than the limit, increase `IngredientLimit` / `-ingredientlimit`, or edit the registration manually on event.shbf.se after importing.
 
+## Validation (Go program)
+
+The Go program checks that the recipe fits the chosen style using the **STYLE** element in the BeerXML. If the style defines min/max for a dimension, the recipe’s values are compared; if any value is outside the range, the run stops with an error.
+
+| Check   | Recipe value (from BeerXML) | Style bounds (STYLE)   |
+|--------|-----------------------------|------------------------|
+| OG     | OG / EST_OG                 | OG_MIN, OG_MAX         |
+| FG     | FG / EST_FG                 | FG_MIN, FG_MAX         |
+| IBU    | IBU / EST_IBU               | IBU_MIN, IBU_MAX       |
+| EBC (color) | EST_COLOR               | COLOR_MIN, COLOR_MAX   |
+| ABV    | ABV / EST_ABV               | ABV_MIN, ABV_MAX       |
+
+If min/max are missing for a dimension in the style, that check is skipped. The recipe must have a valid style (CATEGORY_NUMBER and STYLE_LETTER).
+
 ---
 
 ## Installing Go (for the Go program)

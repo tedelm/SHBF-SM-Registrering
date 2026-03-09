@@ -114,5 +114,23 @@ func MakeSHBFCompatible(beerXml *Recipe) (*Recipe, error) {
 		beerXml.Miscs.Misc[i].Amount = strconv.Itoa(int(math.Round(miscAmount * 1000)))
 	}
 
+	//Mash step time and temp to integer
+	for i := range beerXml.Mash.Steps.MashSteps {
+		mashStepTimeFloat, _ := strconv.ParseFloat(beerXml.Mash.Steps.MashSteps[i].StepTime, 64)
+		beerXml.Mash.Steps.MashSteps[i].StepTime = strconv.Itoa(int(math.Round(mashStepTimeFloat)))
+
+		mashStepTempFloat, _ := strconv.ParseFloat(beerXml.Mash.Steps.MashSteps[i].StepTemp, 64)
+		beerXml.Mash.Steps.MashSteps[i].StepTemp = strconv.Itoa(int(math.Round(mashStepTempFloat)))
+	}
+
+	//Yeasts min and max temperature to 1 decimal place
+	for i := range beerXml.Yeasts.Yeast {
+		yeastMinTemperatureFloat, _ := strconv.ParseFloat(beerXml.Yeasts.Yeast[i].MinTemperature, 64)
+		beerXml.Yeasts.Yeast[i].MinTemperature = strconv.FormatFloat(yeastMinTemperatureFloat, 'f', 1, 64)
+
+		yeastMaxTemperatureFloat, _ := strconv.ParseFloat(beerXml.Yeasts.Yeast[i].MaxTemperature, 64)
+		beerXml.Yeasts.Yeast[i].MaxTemperature = strconv.FormatFloat(yeastMaxTemperatureFloat, 'f', 1, 64)
+	}
+
 	return beerXml, nil
 }

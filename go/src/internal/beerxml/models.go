@@ -10,12 +10,15 @@ type Recipe struct {
 	Style        Style        `xml:"STYLE"`
 	OG           string       `xml:"OG"`
 	FG           string       `xml:"FG"`
+	EstOG        string       `xml:"EST_OG"`
+	EstFG        string       `xml:"EST_FG"`
 	BatchSize    string       `xml:"BATCH_SIZE"`
 	DisplayBatch string       `xml:"DISPLAY_BATCH_SIZE"`
 	IBU          string       `xml:"IBU"`
 	EstIBU       string       `xml:"EST_IBU"`
 	ABV          string       `xml:"ABV"`
 	EstABV       string       `xml:"EST_ABV"`
+	EstColor     string       `xml:"EST_COLOR"` // e.g. "79.3 EBC"
 	Notes        string       `xml:"NOTES"`
 	Hops         Hops         `xml:"HOPS"`
 	Fermentables Fermentables `xml:"FERMENTABLES"`
@@ -25,11 +28,21 @@ type Recipe struct {
 	Miscs        Miscs        `xml:"MISCS"`
 }
 
-// Style holds category and letter for SHBF style dropdown (e.g. "9:J").
+// Style holds category and letter for SHBF style dropdown (e.g. "9:J") and optional min/max for validation.
 type Style struct {
 	CategoryNumber string `xml:"CATEGORY_NUMBER"`
 	StyleLetter    string `xml:"STYLE_LETTER"`
 	Notes          string `xml:"NOTES"`
+	OGMin          string `xml:"OG_MIN"`
+	OGMax          string `xml:"OG_MAX"`
+	FGMin          string `xml:"FG_MIN"`
+	FGMax          string `xml:"FG_MAX"`
+	IBUMin         string `xml:"IBU_MIN"`
+	IBUMax         string `xml:"IBU_MAX"`
+	ColorMin       string `xml:"COLOR_MIN"` // EBC
+	ColorMax       string `xml:"COLOR_MAX"`
+	ABVMin         string `xml:"ABV_MIN"`
+	ABVMax         string `xml:"ABV_MAX"`
 }
 
 // Hops wraps hop entries.
@@ -45,6 +58,7 @@ type Hop struct {
 	DisplayAmount string `xml:"DISPLAY_AMOUNT"` // e.g. "50 g"
 	Time          string `xml:"TIME"`           // boil minutes
 	Form          string `xml:"FORM"`           // Pellet, Leaf, etc.
+	Use           string `xml:"USE"`            // Mash, Boil, Primary, Secondary, Dry Hop
 	Notes         string `xml:"NOTES"`
 }
 
